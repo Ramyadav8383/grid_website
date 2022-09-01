@@ -1,27 +1,98 @@
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+/* category */
+.category {
+  display: inline-block;
+  color: #fff;
+  font-size: .55rem;
+  text-transform: uppercase;
+  padding: .4rem .6rem;
+  border-radius: 15px;
+  margin-bottom: .5rem;
+}
+.category-sports { background: var(--sports-color); }
+.category-ent { background: var(--ent-color); }
+.category-tech { background: var(--tech-color); }
+
 /* button */
 .btn {
   display: inline-block;
-  padding: .50rem 2rem;
-  background: brown;
+  padding: .50rem 1.5rem;
+  background: var(--dark-color);
   color: #fff;
   cursor: pointer;
   border: none;
 }
-.btn-primary {
-  background-color: brown;
-}
-.btn-primary:hover {
-  background: #ccc;
-}
+.btn-light {background: var(--light-color);}
+.btn-primary {background: var(--primary-color);}
+.btn-secondary {background: var(--secondary-color);}
 .btn:hover {
-  background-color: rgb(179, 76, 76);
+  opacity: .9;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+/* cards */
+.card {
+  background: #fff;
+  padding: 1rem;
+}
+/* backgrounds */
+.bg-dark {background: var(--dark-color);
   color: #fff;
 }
-.span {
-  display: inline-block;
-  padding: 1px 8px;
-  border-radius: 20px;
-  font-size: 10px;
-  margin-bottom: 5px;
-  background: goldenrod;
+.bg-primary {background: var(--primary-color);
+  color: #fff;
+}
+.bg-secondary {background: var(--secondary-color);
+  color: #fff;
+}
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a {
+  color: #fff;
+}
+/* padding classes */
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.p-1 {
+  padding: 1.5rem;
+}
+.py-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+/* list style */
+.list li {
+  padding: .5rem 0;
+  border-bottom: #555 1px dotted ;
+  width: 90%;
+}
+.list li a:hover {
+  color: var(--primary-color)!important;
 }
